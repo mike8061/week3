@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("reset.css");
+@import url("utils.css");
+
+/* -------------------------- *\
+	Globel
+\* -------------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei";
+    line-height: 1.5;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #2e1a1a;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+.container img {
+    width: 80px;
+    height: 48.57px;
+    transition: 0.3s;
+}
+.container img:hover {
+    filter: drop-shadow(5px 5px 2px #2e1a1a);
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 372px;
+    }
+    .container a {
+        padding: 16px 0;
+    }
+    .container li {
+        border: 1px solid white;
+    }
+    .container li a {
+        padding: 12px 0;
+        text-align: center;
+    }
+    .fs-md-4 {
+        font-size: 16px;
+    }
+    .mr-md-auto {
+        margin-right: auto;
+    }
+    .mr-md-0 {
+        margin-right: 0px;
+    }
+    .flex-md-column {
+        flex-direction: column;
+    }
+    .flex-md-wrap {
+        flex-wrap: wrap;
+    }
+    .w-md-100 {
+        width: 100%;
+    }
+    .col-md {
+        width: 50%;
+    }
+}
+footer .social-icon img {
+    max-width: none;
+    width: 48px;
+    height: 48px;
+}
+footer .social-icon a {
+    display: inline-block;
+}
+
+.copyright {
+    border-top: 1px solid #ffffff;
+}
+.copyright a {
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+    .mr-lg-16 {
+        margin-right: 16px;
+    }
+}
+@media (max-width: 768px) {
+    footer .container img {
+        width: 24px;
+        height: 24px;
+    }
+    footer .container li {
+        border: none;
+    }
+    footer .container li span {
+        vertical-align: middle;
+    }
+    footer .container a {
+        text-align: start;
+    }
+    .fs-md-5 {
+        font-size: 20px;
+    }
+    .d-md-none {
+        display: none;
+    }
+    .ml-md-auto {
+        margin-left: auto;
+    }
+    .py-md-24 {
+        padding: 24px 0;
+    }
+    .pt-md-16 {
+        padding-top: 16px;
+    }
+}
